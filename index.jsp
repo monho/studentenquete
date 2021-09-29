@@ -13,10 +13,19 @@
     </head> 
     <body>
       <script>
-        function btn(){
-          alert("학번을 입력하세요.")
+        function check(){
+            if(document.getElementById("student-num").value==""){
+                alert("학번을 입력하세요");
+                return;
+            }
+            if(document.getElementById("password").value==""){
+                alert("비밀번호를 입력하세요");
+                return;
+            }
+            frm.submit(); //직접 submit()이라는 메소드를 호출. 액션을 들고 가줌
         }
-      </script>
+        </script>
+        
         <!-- 제이쿼리 로드 -->
         <script src="./js/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
@@ -39,28 +48,31 @@
                         <h3 class="mb-5">로그인</h3>
             
                         <div class="form-outline mb-4">
-                          <input type="text" id="typeEmailX" class="form-control form-control-lg"placeholder="학번"  />
+                          <form name="login" onsubmit="return check()">
+                            <input type="text" id="student-num" class="form-control form-control-lg"placeholder="학번"  />
 
-                        </div>
-            
-                        <div class="form-outline mb-4">
-                          <input type="password" id="typePasswordX" class="form-control form-control-lg" placeholder="비밀번호" />
-
-                        </div>
-            
-                        <!-- Checkbox -->
-                        <div class="form-check d-flex justify-content-start mb-4">
-                          <input
-                            class="form-check-input"
-                            type="checkbox"
-                            value=""
-                            id="form1Example3"
-                          />
-                          <label class="form-check-label" for="form1Example3" style="margin-left : 3%;color:#7d7d7d;">비밀번호 저장</label>
-                          <a href="/register.jsp"class="form-check-label"  style="margin-left : auto;color:#7d7d7d;">학생ff등록</a>
-                        </div>
-            
-                        <button class="btn btn-primary btn-lg btn-block" type="submit" onlick="javascript:btn()">로그인</button>
+                          </div>
+              
+                          <div class="form-outline mb-4">
+                            <input type="password" id="password" class="form-control form-control-lg" placeholder="비밀번호" />
+  
+                          </div>
+              
+                          <!-- Checkbox -->
+                          <div class="form-check d-flex justify-content-start mb-4">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                              id="form1Example3"
+                            />
+                            <label class="form-check-label" for="form1Example3" style="margin-left : 3%;color:#7d7d7d;">비밀번호 저장</label>
+                            <a href="user/register.jsp"class="form-check-label"  style="margin-left : auto;color:#7d7d7d;">학생등록</a>
+                          </div>
+              
+                          <button class="btn btn-primary btn-lg btn-block" type="submit" onlick="javascript:check()">로그인</button>
+                          </form>
+                         
                        
                        
                       </div>
