@@ -57,7 +57,7 @@
                             id="form1Example3"
                           />
                           <label class="form-check-label" for="form1Example3" style="margin-left : 3%;color:#7d7d7d;">비밀번호 저장</label>
-                          <a href="#"class="form-check-label"  style="margin-left : auto;color:#7d7d7d;">학생등록</a>
+                          <a href="/register.jsp"class="form-check-label"  style="margin-left : auto;color:#7d7d7d;">학생ff등록</a>
                         </div>
             
                         <button class="btn btn-primary btn-lg btn-block" type="submit" onlick="javascript:btn()">로그인</button>
