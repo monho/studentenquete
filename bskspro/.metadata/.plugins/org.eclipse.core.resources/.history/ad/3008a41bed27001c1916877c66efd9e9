@@ -1,0 +1,16 @@
+package member;
+
+import java.sql.Timestamp;
+
+public class LogonDateBean {
+	private String USER_STUDENT_NO;
+	private String USER_PW;
+	private String USER_NAME;
+	private String USER_BIRTH;
+	private String USER_PHONE;
+	private String USER_MAIL;
+	private String USER_ADDR;
+	private String USER_SEX;
+	private Timestamp USER_SYS;
+	
+}

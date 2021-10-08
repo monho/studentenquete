@@ -1,0 +1,45 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./css/custom.css">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<meta charset="UTF-8">
+<title>현장실습 만족도 조사</title>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	      <a class="navbar-brand" href="index.jsp">강의평가 웹 사이트</a>
+	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
+	        <span class="navbar-toggler-icon"></span>
+	      </button>
+	      <div class="collapse navbar-collapse" id="navbar">
+	        <ul class="navbar-nav mr-auto">
+	          <li class="nav-item active">
+	            <a class="nav-link" href="index.jsp">메인</a>
+	          </li>
+	          <li class="nav-item dropdown">
+	            <a class="nav-link dropdown-toggle" id="dropdown" data-toggle="dropdown">
+	              회원 관리
+	            </a>
+	            <div class="dropdown-menu" aria-labelledby="dropdown">
+	              <a class="dropdown-item" href="#">로그인</a>
+	              <a class="dropdown-item" href="#">회원가입</a>
+	              <a class="dropdown-item" href="#">로그아웃</a>
+	            </div>
+	          </li>
+	        </ul>
+	        <form class="form-inline my-2 my-lg-0">
+	          <input class="form-control mr-sm-2" type="search" placeholder="내용을 입력하세요." aria-label="Search">
+	          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">검색</button>
+	        </form>
+	      </div>
+	    </nav>
+
+</body>
+</html>
